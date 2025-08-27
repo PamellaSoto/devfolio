@@ -1,0 +1,67 @@
+{
+  "menu": {
+    "home": "Início",
+    "skills": "Skills",
+    "projects": "Projetos",
+    "about": "Sobre mim",
+    "contact": "Contato",
+    "resume" : "Baixar meu CV",
+    "lang": "EN"
+  },
+  "links" : ["inicio", "skills", "projetos", "sobre-mim", "contato"],
+  "hero": {
+    "subtitle" : "Olá, eu sou Pamella Sotomayor",
+    "title" : "Desenvolvedora Fullstack",
+    "list" : [
+      "Experiência prática em projetos frontend e backend",
+      "Foco em UX, acessibilidade e design centrado no usuário",
+      "Desenvolvimento contínuo, aprendizado e colaboração"
+    ],
+    "contactBtn": "Fale comigo",
+    "projectBtn": "Ver meus projetos"
+  },
+  "skills": {
+    "subtitle" : "Minhas competências",
+    "title" : "Por que trabalhar comigo?",
+    "text" : "Eu possuo mais de <b>2 anos de experiência prática</b> em desenvolvimento web (frontend e backend), e na construção de interfaces interativas responsivas.",
+    "frontendText" : "Design mobile-first e responsivo",
+    "design" : {
+      "title" : "Design UI/UX",
+      "figma" : "Figma (Wireframes, prototipagem interativa)",
+      "usabilidade" : "Testes de Usabilidade & Acessibilidade"
+    },
+    "other" : {
+      "title" : "Outras habilidades",
+      "agile" : "Metodologias Ágeis (Sprints, Kanban)",
+      "office" : "Pacote Office"
+    },
+    "button" : "Fale comigo"
+  },
+  "projects": {
+    "title" : "Meus Projetos",
+    "subtitle" : "O que eu desenvolvi até aqui",
+    "button" : "Carregar mais"
+  },
+  "about": {
+    "subtitle" : "Sobre mim",
+    "title" : "Minha trajetória, valores e visão como desenvolvedora",
+    "text" : ["Sou estudante de Sistemas para Internet na <b>FATEC Rubens Lara</b> e estou buscando oportunidades para expandir meu conhecimento. Além do currículo acadêmico, estudo por conta própria para expandir meus conhecimentos e explorar diferentes áreas da tecnologia.",
+    "Na minha trajetória já participei de projetos de diferentes níveis de complexidade, e cada experiência me <b>trouxe novas lições.</b> Valorizo a <b>colaboração e código limpo</b>, sempre com foco em qualidade e evolução contínua.",
+    "Tenho grande interesse por <b>UI/UX e design de interfaces</b>, buscando criar aplicações que não sejam somente funcionais, mas bonitas e acessíveis.",
+    "Na minha vida pessoal, eu procuro equilíbrio. Quando não estou estudando ou desenvolvendo, gosto de <b>assistir séries e passar tempo com as pessoas que eu amo.</b> Esses momentos me ajudam a recarregar as energias e voltar ao trabalho com uma cabeça mais leve, criativa e pronta para enfrentar novos desafios!"
+  ],
+  "cats" : "Eu também amo passar tempo com meus gatos! Eles fazem excelentes companhias durante minhas sessões de estudo"
+  },
+  "contact": {
+    "subtitle" : "Entre em contato",
+    "title" : "Aberta a oportunidades",
+    "text" : "Seja para trabalho, parcerias ou networking, estarei sempre aberta a novas conexões. Vamos conversar?",
+    "labels" : [
+      "Nome",
+      "E-mail",
+      "Mensagem"
+    ],
+    "button" : "Enviar mensagem"
+  },
+  "footer": "© 2025 pamellasoto.dev. Todos os direitos reservados."
+}

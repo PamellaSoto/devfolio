@@ -1,0 +1,68 @@
+{
+  "menu": {
+    "home": "Home",
+    "skills": "Skills",
+    "projects": "Projects",
+    "about": "About Me",
+    "contact": "Contact",
+    "resume": "Download Resume",
+    "lang": "PT-BR"
+  },
+  "links": ["home","skills","projects", "about", "contact"],
+  "hero": {
+    "subtitle": "Hi, I'm Pamella Sotomayor",
+    "title": "Fullstack Developer",
+    "list": [
+      "Hands-on experience in frontend and backend projects",
+      "Focus on UX, accessibility, and user-centered design",
+      "Dedicated to learning, and working on collaborations"
+    ],
+    "contactBtn": "Get in touch",
+    "projectBtn": "View my projects"
+  },
+  "skills": {
+    "subtitle": "My Skills",
+    "title": "Why work with me?",
+    "text": "I have over <b>2 years of hands-on experience</b> in web development (frontend and backend), building responsive and interactive interfaces.",
+    "frontendText": "Mobile-first and responsive design",
+    "design": {
+      "title": "UI/UX Design",
+      "figma": "Figma (Wireframes, interactive prototyping)",
+      "usabilidade": "Usability & Accessibility Testing"
+    },
+    "other": {
+      "title": "Other Skills",
+      "agile": "Agile Workflows (Sprints, Kanban)",
+      "office": ""
+    },
+    "button": "Get in touch"
+  },
+  "projects": {
+    "title": "My Projects",
+    "subtitle": "What I've built so far",
+    "button": "Load more"
+  },
+  "about": {
+    "subtitle": "About Me",
+    "title": "Learn about my journey as a developer",
+    "text": [
+      "I'm a dedicated developer always seeking opportunities to expand my knowledge. Besides my academic background, I enjoy studying by myself to deepen my skills and explore new areas of technology.",
+      "Throughout my years as a dev, I've worked on projects with different levels of complexity, and each experience has <b>taught me valuable lessons.</b> I value <b>collaboration and clean code</b>, always aiming for quality and growth.",
+      "I'm interested in working with <b>UI/UX and interface design</b>, aiming to create applications that are not only functional but also visually appealing and accessible.",
+      "Outside of coding, I look for balance. When I'm not studying or working, I enjoy <b>watching series and spending time with the people I love.</b> These moments help me recharge and return to work with a clearer, more creative mindset — ready to take on new challenges!"
+    ],
+    "cats": "I also love spending time with my cats! They are the perfect little companions during my study sessions."
+  },
+  "contact": {
+    "subtitle": "Get in touch",
+    "title": "Open to opportunities",
+    "text": "Whether it's for work, collaborations, or networking, I'm always open to new connections. Let's talk!",
+    "labels": [
+      "Name",
+      "Email",
+      "Message"
+    ],
+    "button": "Send message"
+  },
+  "footer": "© 2025 pamellasoto.dev. All rights reserved."
+}
