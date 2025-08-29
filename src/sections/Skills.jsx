@@ -13,7 +13,7 @@ const Skills = () => {
   return (
     <Element
       name={actionLink[1]}
-      className="flex flex-col items-center gap-6 py-13 md:items-start"
+      className="flex flex-col items-center gap-6 py-20 md:items-start"
     >
       <div className="md:flex md:justify-between">
         <h2 className="text-center md:text-left">
@@ -27,7 +27,7 @@ const Skills = () => {
       </div>
 
       <div className="mt-10 flex flex-col gap-20 md:flex-row md:gap-6">
-        <div className="bg-purple/15 relative flex-1 rounded-md px-6 pb-6">
+        <div className="bg-purple/15 border-purple/30 relative flex-1 rounded-md border-2 px-6 pb-6">
           <div className="bg-purple absolute top-[-30px] inline-block rounded-full p-4">
             <FaCode size={32} />
           </div>
@@ -44,7 +44,7 @@ const Skills = () => {
           </ul>
         </div>
 
-        <div className="bg-purple/15 relative flex-1 rounded-md px-6 pb-6">
+        <div className="bg-purple/15 border-purple/30 relative flex-1 rounded-md border-2 px-6 pb-6">
           <div className="bg-purple absolute top-[-30px] inline-block rounded-full p-4">
             <FaDatabase size={32} />
           </div>
@@ -62,7 +62,7 @@ const Skills = () => {
           </ul>
         </div>
 
-        <div className="bg-purple/15 relative flex-1 rounded-md px-6 pb-6">
+        <div className="bg-purple/15 border-purple/30 relative flex-1 rounded-md border-2 px-6 pb-6">
           <div className="bg-purple absolute top-[-30px] inline-block rounded-full p-4">
             <IoColorPalette size={32} />
           </div>
@@ -79,7 +79,7 @@ const Skills = () => {
           </ul>
         </div>
 
-        <div className="bg-purple/15 relative flex-1 rounded-md px-6 pb-6">
+        <div className="bg-purple/15 border-purple/30 relative flex-1 rounded-md border-2 px-6 pb-6">
           <div className="bg-purple absolute top-[-30px] inline-block rounded-full p-4">
             <IoSettingsSharp size={32} />
           </div>
@@ -99,7 +99,7 @@ const Skills = () => {
       </div>
 
       <Link
-        className="btn-primary mt-7"
+        className="btn-primary mt-4"
         to={actionLink[4]}
         smooth={true}
         duration={500}

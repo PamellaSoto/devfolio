@@ -15,7 +15,7 @@ const LandingPage = () => {
 
   return (
     <>
-      <header className="sticky flex items-center justify-between px-5 pt-5 md:px-15 lg:px-35">
+      <header className="sticky flex items-center justify-between px-5 pt-5 md:px-15 lg:px-70">
         <p className="mb-0 md:text-xl">pamellasoto.dev</p>
         <Menu />
       </header>
@@ -28,9 +28,9 @@ const LandingPage = () => {
           <Contact />
         </Element>
       </main>
-      <footer className="bg-purple flex flex-col items-center md:flex-row-reverse md:justify-between md:items-start py-4 px-5 md:px-15 lg:px-35">
+      <footer className="bg-purple flex flex-col items-center px-5 py-4 md:flex-row-reverse md:items-start md:justify-between md:px-15 lg:px-70">
         <SocialMediaLinks />
-        <p className='text-xs leading-relaxed text-center'>{t('footer')}</p>
+        <p className="text-center text-xs leading-relaxed">{t('footer')}</p>
       </footer>
     </>
   )
