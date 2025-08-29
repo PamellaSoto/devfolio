@@ -1,51 +1,91 @@
-import { useTranslation } from "react-i18next";
-import { useState } from "react";
-import LanguageSelector from "./LanguageSelector";
+import { useTranslation } from 'react-i18next'
+import { useState } from 'react'
+import { Link } from 'react-scroll'
+import LanguageSelector from './LanguageSelector'
 
-import { HiBars3, HiXMark } from "react-icons/hi2";
+import { HiBars3, HiXMark } from 'react-icons/hi2'
 
 const Menu = () => {
-  const { t } = useTranslation();
-  const menu = t("menu", { returnObjects: true });
-  const menuLinks = t("links", { returnObjects: true });
+  const { t } = useTranslation()
+  const menu = t('menu', { returnObjects: true })
+  const menuLinks = t('links', { returnObjects: true })
 
-  const [isOpen, setIsOpen] = useState(false);
-  const toggleDropdown = () => setIsOpen(!isOpen);
+  const [isOpen, setIsOpen] = useState(false)
+  const toggleDropdown = () => setIsOpen(!isOpen)
 
   return (
     <>
-      <button onClick={toggleDropdown}>
-        {isOpen ? <HiXMark size={22} /> : <HiBars3 size={22}/>}
+      <button onClick={toggleDropdown} className="md:hidden">
+        {isOpen ? <HiXMark size={22} /> : <HiBars3 size={22} />}
       </button>
-      {isOpen && 
-        <nav className="absolute top-10 right-0 bg-[#131213] p-5 rounded-xl min-w-60 transition-all">
+      {isOpen && (
+        <nav>
           <ul>
-            <li className="pb-3 border-b-1 mb-3">
+            <li>
               <LanguageSelector />
             </li>
-            <li className="p-3 hover:bg-yellow-400 rounded-xl">
-              <a href={"#" + menuLinks[0]}>{menu.home}</a>
+            <li>
+              <Link to={menuLinks[0]} smooth={true} duration={500}>
+                {menu.home}
+              </Link>
             </li>
-            <li className="p-3 hover:bg-yellow-400 rounded-xl">
-              <a href={"#" + menuLinks[1]}>{menu.skills}</a>
+            <li>
+              <Link to={menuLinks[1]} smooth={true} duration={500}>
+                {menu.skills}
+              </Link>
             </li>
-            <li className="p-3 hover:bg-yellow-400 rounded-xl">
-              <a href={"#" + menuLinks[2]}>{menu.projects}</a>
+            <li>
+              <Link to={menuLinks[2]} smooth={true} duration={500}>
+                {menu.projects}
+              </Link>
             </li>
-            <li className="p-3 hover:bg-yellow-400 rounded-xl">
-              <a href={"#" + menuLinks[3]}>{menu.about}</a>
+            <li>
+              <Link to={menuLinks[3]} smooth={true} duration={500}>
+                {menu.about}
+              </Link>
             </li>
-            <li className="p-3 hover:bg-yellow-400 rounded-xl">
-              <a href={"#" + menuLinks[4]}>{menu.contact}</a>
+            <li>
+              <Link to={menuLinks[4]} smooth={true} duration={500}>
+                {menu.contact}
+              </Link>
             </li>
-            <li className="p-3 bg-yellow-400 rounded-xl">
+            <li>
               <a href="#LINK">{menu.resume}</a>
             </li>
           </ul>
         </nav>
-      }
-    </>
-  );
-};
+      )}
 
-export default Menu;
+      <nav className="hidden md:flex">
+        <ul className="mr-7 flex gap-5 border-r pr-7 uppercase">
+          <li>
+            <Link className='hover:bg-purple py-2 px-6 rounded-lg cursor-pointer' to={menuLinks[1]} smooth={true} duration={500}>
+              {menu.skills}
+            </Link>
+          </li>
+          <li>
+            <Link className='hover:bg-purple py-2 px-6 rounded-lg cursor-pointer' to={menuLinks[2]} smooth={true} duration={500}>
+              {menu.projects}
+            </Link>
+          </li>
+          <li>
+            <Link className='hover:bg-purple py-2 px-6 rounded-lg cursor-pointer' to={menuLinks[3]} smooth={true} duration={500}>
+              {menu.about}
+            </Link>
+          </li>
+          <li>
+            <Link className='hover:bg-purple py-2 px-6 rounded-lg cursor-pointer' to={menuLinks[4]} smooth={true} duration={500}>
+              {menu.contact}
+            </Link>
+          </li>
+          <li>
+            <a className='hover:bg-purple py-2 px-6 rounded-lg cursor-pointer' href="#LINK">{menu.resume}</a>
+          </li>
+        </ul>
+        <LanguageSelector />
+      </nav>
+    </>
+  )
+}
+
+export default Menu

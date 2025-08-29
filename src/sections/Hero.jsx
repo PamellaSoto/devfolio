@@ -1,29 +1,54 @@
-import { useTranslation } from "react-i18next";
-import { IoIosArrowRoundUp } from "react-icons/io";
-import SectionTitle from "../components/SectionTitle";
-import Button from "../components/Button";
-import SocialMediaLinks from "../components/SocialMediaLinks";
+import { useTranslation } from 'react-i18next'
+import { Link, Element } from 'react-scroll'
+
+import { IoIosArrowRoundUp } from 'react-icons/io'
+import myPhoto from '../assets/pamella-soto.png'
 
 const Hero = () => {
-  const { t } = useTranslation();
-  const hero = t("hero", { returnObjects: true });
+  const { t } = useTranslation()
+  const hero = t('hero', { returnObjects: true })
+  const navLinks = t('links', { returnObjects: true })
 
   return (
-    <section id={"#" + t("links", { returnObjects: true })[0]} >
-      <SectionTitle subtitle={hero.subtitle} title={hero.title} />
-      <ul>
-        {hero.list.map((item, key) => {
-          return <li key={"hero_" + key}>{item}</li>;
-        })}
-      </ul>
-      <Button href={"#" + t("links", { returnObjects: true })[4]} label={hero.contactBtn} />
-      <a className="flex items-center" href={"#" + t("links", { returnObjects: true })[2]} >
-        {hero.projectBtn} <IoIosArrowRoundUp className="rotate-45" />
-      </a>
+    <Element
+      name={navLinks[0]}
+      className="py-13 md:flex md:flex-row-reverse md:items-center md:justify-between"
+    >
+      <img src={myPhoto} className="hover:scale-105" />
+      <div>
+        <h1 className="text-center md:text-left">
+          <span>{hero.subtitle}</span>
+          {hero.title}
+        </h1>
 
-      <SocialMediaLinks />
-    </section>
-  );
-};
+        <ul className="mt-4">
+          {hero.list.map((item, key) => {
+            return <li key={'hero_' + key}>{item}</li>
+          })}
+        </ul>
 
-export default Hero;
+        <div className="mt-8 flex gap-4 md:mt-15">
+          <Link
+            className="btn-primary"
+            to={navLinks[4]}
+            smooth={true}
+            duration={500}
+          >
+            {hero.contactBtn}
+          </Link>
+          <Link
+            className="link inline-flex items-center"
+            to={navLinks[2]}
+            smooth={true}
+            duration={500}
+          >
+            {hero.projectBtn}
+            <IoIosArrowRoundUp size={22} className="inline-block rotate-45" />
+          </Link>
+        </div>
+      </div>
+    </Element>
+  )
+}
+
+export default Hero

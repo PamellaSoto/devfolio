@@ -1,20 +1,24 @@
-import { useTranslation } from "react-i18next";
+import { useTranslation } from 'react-i18next'
 
-import SectionTitle from "../components/SectionTitle";
-import IconRounded from "../components/IconRounded";
-import { FaWhatsapp, FaRegEnvelope } from "react-icons/fa";
+import { Element } from 'react-scroll'
+import { FaWhatsapp, FaRegEnvelope } from 'react-icons/fa'
 
 const Contact = () => {
-  const { t } = useTranslation();
-  const contact = t("contact", { returnObjects: true });
+  const { t } = useTranslation()
+  const contact = t('contact', { returnObjects: true })
 
   return (
-    <section id={"#" + t("links", { returnObjects: true })[0]}>
+    <Element className="py-13">
       <div>
-        <SectionTitle subtitle={contact.subtitle} title={contact.title} />
+        <h2 className="mb-6 text-center md:text-left">
+          <span>{contact.subtitle}</span>
+          {contact.title}
+        </h2>
         <p>{contact.text}</p>
-        <div className="flex items-center">
-          <IconRounded label={<FaWhatsapp className="text-white" />} />
+        <div>
+          <div>
+            <FaWhatsapp size={25} />
+          </div>
           <div>
             <h3>
               <a href="#whatsapp">+55 (13) 99168-5115</a>
@@ -23,8 +27,10 @@ const Contact = () => {
           </div>
         </div>
 
-        <div className="flex items-center">
-          <IconRounded label={<FaRegEnvelope className="text-white" />} />
+        <div>
+          <div>
+            <FaRegEnvelope size={25} />
+          </div>
           <div>
             <h3>
               <a href="mailto:pamellasoto.dev@gmail.com">
@@ -39,21 +45,39 @@ const Contact = () => {
         <form>
           <div>
             <label for="name">{contact.labels[0]}</label>
-            <input type="text" id="name" name="name" placeholder={contact.labels[0]} required />
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder={contact.labels[0]}
+              required
+            />
           </div>
           <div>
             <label for="e_mail">{contact.labels[1]}</label>
-            <input type="email" id="e_mail" name="e_mail" placeholder={contact.labels[1]} required />
+            <input
+              type="email"
+              id="e_mail"
+              name="e_mail"
+              placeholder={contact.labels[1]}
+              required
+            />
           </div>
           <div>
             <label for="mensagem">{contact.labels[2]}</label>
-            <textarea id="mensagem" name="mensagem" placeholder={contact.labels[2]} required></textarea>
+            <textarea
+              id="mensagem"
+              name="mensagem"
+              rows={8}
+              placeholder={contact.labels[2]}
+              required
+            ></textarea>
           </div>
           <button type="submit">{contact.button}</button>
         </form>
       </div>
-    </section>
-  );
-};
+    </Element>
+  )
+}
 
-export default Contact;
+export default Contact

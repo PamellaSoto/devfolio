@@ -8,22 +8,22 @@
     "resume": "Download Resume",
     "lang": "PT-BR"
   },
-  "links": ["home","skills","projects", "about", "contact"],
+  "links": ["home", "skills", "projects", "about", "contact"],
   "hero": {
-    "subtitle": "Hi, I'm Pamella Sotomayor",
+    "subtitle": "// Hi, I'm Pamella Sotomayor",
     "title": "Fullstack Developer",
     "list": [
-      "Hands-on experience in frontend and backend projects",
-      "Focus on UX, accessibility, and user-centered design",
-      "Dedicated to learning, and working on collaborations"
+      "🚀 Hands-on experience in frontend and backend projects",
+      "🎨 Focus on UI, accessibility, and user-centered design",
+      "🌱 Dedicated to learning, and working on collaborations"
     ],
     "contactBtn": "Get in touch",
     "projectBtn": "View my projects"
   },
   "skills": {
-    "subtitle": "My Skills",
+    "subtitle": "// My Skills",
     "title": "Why work with me?",
-    "text": "I have over <b>2 years of hands-on experience</b> in web development (frontend and backend), building responsive and interactive interfaces.",
+    "text": "I have over <b>2 years of hands-on experience</b> in web development, building responsive and interactive interfaces.",
     "frontendText": "Mobile-first and responsive design",
     "design": {
       "title": "UI/UX Design",
@@ -35,16 +35,16 @@
       "agile": "Agile Workflows (Sprints, Kanban)",
       "office": ""
     },
-    "button": "Get in touch"
+    "button": "Send me an email"
   },
   "projects": {
     "title": "My Projects",
-    "subtitle": "What I've built so far",
+    "subtitle": "// What I've built so far",
     "button": "Load more"
   },
   "about": {
-    "subtitle": "About Me",
-    "title": "Learn about my journey as a developer",
+    "subtitle": "// About Me",
+    "title": "Titulo mt legal e em ingles aq",
     "text": [
       "I'm a dedicated developer always seeking opportunities to expand my knowledge. Besides my academic background, I enjoy studying by myself to deepen my skills and explore new areas of technology.",
       "Throughout my years as a dev, I've worked on projects with different levels of complexity, and each experience has <b>taught me valuable lessons.</b> I value <b>collaboration and clean code</b>, always aiming for quality and growth.",
@@ -54,14 +54,10 @@
     "cats": "I also love spending time with my cats! They are the perfect little companions during my study sessions."
   },
   "contact": {
-    "subtitle": "Get in touch",
+    "subtitle": "//Get in touch",
     "title": "Open to opportunities",
     "text": "Whether it's for work, collaborations, or networking, I'm always open to new connections. Let's talk!",
-    "labels": [
-      "Name",
-      "Email",
-      "Message"
-    ],
+    "labels": ["Name", "Email", "Message"],
     "button": "Send message"
   },
   "footer": "© 2025 pamellasoto.dev. All rights reserved."

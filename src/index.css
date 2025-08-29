@@ -1,5 +1,56 @@
-@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import 'tailwindcss';
+@tailwind base;
+@tailwind utilities;
 
 @theme {
-  --bg-background: #060010;
+  --font-heading: 'Space Grotesk', sans-serif;
+  --font-body: 'Space Mono', monospace;
+
+  --color-new-black: #0e0e0f;
+  --color-purple: #6034a5;
+  --color-yellow: #f5e147;
+}
+
+@layer base {
+  body {
+    @apply font-body text-[0.9em] text-white;
+  }
+
+  h1,
+  h2,
+  h3 {
+    @apply font-heading font-bold;
+  }
+
+  h1 {
+    @apply text-[2em] md:text-6xl;
+  }
+
+  h2 {
+    @apply text-3xl md:text-4xl;
+  }
+
+  h1 > span,
+  h2 > span {
+    @apply font-body text-yellow mb-2 block text-base font-normal;
+  }
+
+  p,
+  li {
+    @apply mt-4 leading-relaxed;
+  }
+}
+
+/* Custom components */
+@layer components {
+  * {
+    @apply transition-all duration-[0.5s] ease-in-out;
+  }
+  .link {
+    @apply cursor-pointer font-medium hover:underline;
+  }
+  .btn-primary {
+    @apply bg-purple inline-flex cursor-pointer items-center justify-center rounded-lg px-6 py-2 font-medium uppercase hover:scale-105 hover:brightness-90 active:brightness-80;
+  }
 }
