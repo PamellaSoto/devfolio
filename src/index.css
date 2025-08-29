@@ -8,7 +8,7 @@
   --font-body: 'Space Mono', monospace;
 
   --color-new-black: #0e0e0f;
-  --color-purple: #6034a5;
+  --color-purple: #5534b2;
   --color-yellow: #f5e147;
 }
 
@@ -24,7 +24,7 @@
   }
 
   h1 {
-    @apply text-[2em] md:text-6xl;
+    @apply text-[2em] md:text-3xl lg:text-6xl;
   }
 
   h2 {
@@ -38,7 +38,7 @@
 
   p,
   li {
-    @apply mt-4 leading-relaxed;
+    @apply mt-4 leading-8;
   }
 }
 

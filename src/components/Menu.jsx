@@ -59,27 +59,52 @@ const Menu = () => {
       <nav className="hidden md:flex">
         <ul className="mr-7 flex gap-5 border-r pr-7 uppercase">
           <li>
-            <Link className='hover:bg-purple py-2 px-6 rounded-lg cursor-pointer' to={menuLinks[1]} smooth={true} duration={500}>
+            <Link
+              className="hover:bg-purple cursor-pointer rounded-lg px-6 py-2"
+              to={menuLinks[1]}
+              smooth={true}
+              duration={500}
+            >
               {menu.skills}
             </Link>
           </li>
           <li>
-            <Link className='hover:bg-purple py-2 px-6 rounded-lg cursor-pointer' to={menuLinks[2]} smooth={true} duration={500}>
+            <Link
+              className="hover:bg-purple cursor-pointer rounded-lg px-6 py-2"
+              to={menuLinks[2]}
+              smooth={true}
+              duration={500}
+            >
               {menu.projects}
             </Link>
           </li>
           <li>
-            <Link className='hover:bg-purple py-2 px-6 rounded-lg cursor-pointer' to={menuLinks[3]} smooth={true} duration={500}>
+            <Link
+              className="hover:bg-purple cursor-pointer rounded-lg px-6 py-2"
+              to={menuLinks[3]}
+              smooth={true}
+              duration={500}
+            >
               {menu.about}
             </Link>
           </li>
           <li>
-            <Link className='hover:bg-purple py-2 px-6 rounded-lg cursor-pointer' to={menuLinks[4]} smooth={true} duration={500}>
+            <Link
+              className="hover:bg-purple cursor-pointer rounded-lg px-6 py-2"
+              to={menuLinks[4]}
+              smooth={true}
+              duration={500}
+            >
               {menu.contact}
             </Link>
           </li>
           <li>
-            <a className='hover:bg-purple py-2 px-6 rounded-lg cursor-pointer' href="#LINK">{menu.resume}</a>
+            <a
+              className="hover:bg-purple cursor-pointer rounded-lg px-6 py-2"
+              href="#LINK"
+            >
+              {menu.resume}
+            </a>
           </li>
         </ul>
         <LanguageSelector />

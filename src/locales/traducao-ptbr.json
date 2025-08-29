@@ -11,7 +11,7 @@
   "links": ["inicio", "skills", "projetos", "sobre-mim", "contato"],
   "hero": {
     "subtitle": "// Olá, eu sou Pamella Sotomayor",
-    "title": "Desenvolvedor Fullstack",
+    "title": "Desenvolvedora Fullstack",
     "list": [
       "🚀 Experiência prática em projetos frontend e backend",
       "🎨 Foco em UI, acessibilidade e design centrado no usuário",
@@ -23,8 +23,10 @@
   "skills": {
     "subtitle": "// Minhas habilidades",
     "title": "Por que trabalhar comigo?",
-    "text": "Eu possuo mais de <b>2 anos de experiência prática</b> em desenvolvimento web, e na construção de interfaces interativas responsivas.",
+    "text": "Tenho mais de <b>2 anos de experiência prática em desenvolvimento web</b>, criando interfaces responsivas e interativas. Minha experiência inclui o desenvolvimento e manutenção de sites em WordPress, além de projetos acadêmicos envolvendo <b>operações CRUD e integração de APIs.</b>",
     "frontendText": "Design mobile-first e responsivo",
+    "frontendText2": "SEO e otimização de páginas",
+    "backendText": "Modelagem de Banco de Dados",
     "design": {
       "title": "Design UI/UX",
       "figma": "Figma (Wireframes, prototipagem interativa)",

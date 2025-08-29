@@ -1,8 +1,8 @@
 import { useTranslation } from 'react-i18next'
 import { Link, Element } from 'react-scroll'
 
-import { FaCode, FaDatabase, FaAngleDown } from 'react-icons/fa6'
-import { VscSymbolColor } from 'react-icons/vsc'
+import { FaCode, FaDatabase } from 'react-icons/fa6'
+import { IoColorPalette } from 'react-icons/io5'
 import { IoSettingsSharp } from 'react-icons/io5'
 
 const Skills = () => {
@@ -13,7 +13,7 @@ const Skills = () => {
   return (
     <Element
       name={actionLink[1]}
-      className="flex flex-col items-center md:items-start gap-6 py-13"
+      className="flex flex-col items-center gap-6 py-13 md:items-start"
     >
       <div className="md:flex md:justify-between">
         <h2 className="text-center md:text-left">
@@ -21,76 +21,76 @@ const Skills = () => {
           {skills.title}
         </h2>
         <p
-          className="md:w-4/12"
+          className="md:w-6/12"
           dangerouslySetInnerHTML={{ __html: skills.text }}
         ></p>
       </div>
 
-      <div className="flex flex-col gap-6 md:flex-row">
-        <div className="border-purple flex-1 rounded-md border-1 p-4">
+      <div className="mt-10 flex flex-col gap-20 md:flex-row md:gap-6">
+        <div className="bg-purple/15 relative flex-1 rounded-md px-6 pb-6">
+          <div className="bg-purple absolute top-[-30px] inline-block rounded-full p-4">
+            <FaCode size={32} />
+          </div>
           <div className="flex cursor-pointer justify-between">
-            <div className="bg-purple inline-block rounded-md p-2">
-              <FaCode size={22} />
-            </div>
             <div className="flex items-center gap-6">
-              <h3 className="uppercase">Frontend</h3>
-              <FaAngleDown />
+              <h3 className="mt-15 uppercase">Frontend</h3>
             </div>
           </div>
-          <ul className="mt-4 flex flex-col gap-3">
+          <ul>
             <li>JavaScript, TailwindCSS</li>
-            <li>React.JS, React Router, React Hook Form</li>
+            <li>ReactJS, React Router, React Hook Form</li>
             <li>{skills.frontendText}</li>
+            <li>{skills.frontendText2}</li>
           </ul>
         </div>
 
-        <div className="border-yellow flex-1 rounded-md border-1 p-4">
+        <div className="bg-purple/15 relative flex-1 rounded-md px-6 pb-6">
+          <div className="bg-purple absolute top-[-30px] inline-block rounded-full p-4">
+            <FaDatabase size={32} />
+          </div>
           <div className="flex cursor-pointer justify-between">
-            <div className="bg-yellow inline-block rounded-md p-2">
-              <FaDatabase size={22} />
-            </div>
             <div className="flex items-center gap-6">
-              <h3 className="uppercase">Backend</h3>
-              <FaAngleDown />
+              <h3 className="mt-15 uppercase">Backend</h3>
             </div>
           </div>
-          <ul className="mt-4 flex flex-col gap-3">
+          <ul>
             <li>Java (Spring Boot)</li>
-            <li>RESTful APIs</li>
+            <li>REST API</li>
             <li>Node.js</li>
             <li>MySQL, PostgreSQL, Firebase</li>
+            <li>{skills.backendText}</li>
           </ul>
         </div>
 
-        <div className="border-purple flex-1 rounded-md border-1 p-4">
+        <div className="bg-purple/15 relative flex-1 rounded-md px-6 pb-6">
+          <div className="bg-purple absolute top-[-30px] inline-block rounded-full p-4">
+            <IoColorPalette size={32} />
+          </div>
           <div className="flex cursor-pointer justify-between">
-            <div className="bg-purple inline-block rounded-md p-2">
-              <VscSymbolColor size={22} />
-            </div>
             <div className="flex items-center gap-6">
-              <h3 className="uppercase">{skills.design.title}</h3>
-              <FaAngleDown />
+              <h3 className="mt-15 uppercase">{skills.design.title}</h3>
             </div>
           </div>
-          <ul className="mt-4 flex flex-col gap-3">
+          <ul>
             <li>{skills.design.figma}</li>
+            <li>Wireframe</li>
             <li>{skills.design.usabilidade}</li>
             <li>Design Systems</li>
           </ul>
         </div>
 
-        <div className="border-yellow flex-1 rounded-md border-1 p-4">
+        <div className="bg-purple/15 relative flex-1 rounded-md px-6 pb-6">
+          <div className="bg-purple absolute top-[-30px] inline-block rounded-full p-4">
+            <IoSettingsSharp size={32} />
+          </div>
           <div className="flex cursor-pointer justify-between">
-            <div className="bg-yellow inline-block rounded-md p-2">
-              <IoSettingsSharp size={22} />
-            </div>
             <div className="flex items-center gap-6">
-              <h3 className="uppercase">{skills.other.title}</h3>
-              <FaAngleDown />
+              <h3 className="mt-15 uppercase">{skills.other.title}</h3>
             </div>
           </div>
-          <ul className="mt-4 flex flex-col gap-3">
+          <ul>
             <li>Git & GitHub</li>
+            <li>Wordpress</li>
             <li>{skills.other.agile}</li>
             <li>{skills.other.office}</li>
             <li>Canva, Photoshop, Illustrator</li>

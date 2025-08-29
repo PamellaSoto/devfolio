@@ -23,8 +23,10 @@
   "skills": {
     "subtitle": "// My Skills",
     "title": "Why work with me?",
-    "text": "I have over <b>2 years of hands-on experience</b> in web development, building responsive and interactive interfaces.",
+    "text": "I have over <b>2 years of hands-on experience in web development</b>, building responsive and interactive interfaces. My background includes developing and maintaining WordPress websites, as well as working on academic projects involving <b>CRUD operations and API integration.</b>",
     "frontendText": "Mobile-first and responsive design",
+    "frontendText2": "SEO and page optimization",
+    "backendText": "DB Modeling",
     "design": {
       "title": "UI/UX Design",
       "figma": "Figma (Wireframes, interactive prototyping)",
