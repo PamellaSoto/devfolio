@@ -41,7 +41,7 @@
 
   p,
   li {
-    @apply mt-2 leading-8;
+    @apply mt-2 leading-6;
   }
 }
 
@@ -54,6 +54,6 @@
     @apply cursor-pointer font-medium hover:underline;
   }
   .btn-primary {
-    @apply bg-purple inline-flex cursor-pointer items-center justify-center rounded-lg px-6 py-2 font-medium uppercase hover:scale-105 hover:brightness-90 active:brightness-80;
+    @apply bg-purple inline-flex cursor-pointer items-center justify-center rounded-lg px-6 py-2 text-center font-medium uppercase hover:scale-105 hover:brightness-90 active:brightness-80;
   }
 }

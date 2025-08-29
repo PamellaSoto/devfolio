@@ -8,7 +8,7 @@ const About = () => {
   const actionLink = t('links', { returnObjects: true })
 
   return (
-    <Element name={actionLink[3]} className="py-13 md:flex md:gap-15">
+    <Element name={actionLink[3]} className="py-20 md:flex md:gap-15">
       <div className="md:w-1/3">
         <img
           className="hidden rounded-lg md:block"
@@ -26,7 +26,8 @@ const About = () => {
         </h2>
         {about.text.map((item, key) => {
           return (
-            <p className='mb-4'
+            <p
+              className="mb-4"
               key={'about_' + key}
               dangerouslySetInnerHTML={{ __html: item }}
             ></p>

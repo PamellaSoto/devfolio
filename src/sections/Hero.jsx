@@ -13,10 +13,10 @@ const Hero = () => {
   return (
     <Element
       name={navLinks[0]}
-      className="py-20 md:flex md:items-center md:justify-between"
+      className="flex flex-col items-center py-20 sm:justify-between md:flex-row"
     >
       <img src={myPhoto} className="md:hidden" />
-      <div className='md:w-2/3'>
+      <div className="md:w-2/3">
         <h1 className="text-center md:text-left">
           <span>{hero.subtitle}</span>
           {hero.title}
@@ -28,7 +28,7 @@ const Hero = () => {
           })}
         </ul>
 
-        <div className="mt-8 flex gap-4 md:mt-12">
+        <div className="mt-8 flex gap-4 sm:items-center md:mt-12">
           <Link
             className="btn-primary"
             to={navLinks[4]}
@@ -48,9 +48,11 @@ const Hero = () => {
           </Link>
         </div>
       </div>
-      <div className="hidden md:flex items-center">
+      <div className="hidden items-center md:flex md:w-3/4 md:flex-col xl:flex-row">
         <img src={myPhoto} className="hover:scale-105" />
-        <SocialMediaLinks css={'md:inline-flex md:flex-col ml-6 '} />
+        <SocialMediaLinks
+          css={'md:inline-flex md:flex-row xl:flex-col xl:ml-6 '}
+        />
       </div>
     </Element>
   )

@@ -15,11 +15,11 @@ const LandingPage = () => {
 
   return (
     <>
-      <header className="sticky flex items-center justify-between px-5 pt-5 md:px-15 lg:px-70">
+      <header className="sticky flex items-center justify-between px-5 pt-5 md:px-15 xl:px-40">
         <p className="mb-0 md:text-xl">pamellasoto.dev</p>
         <Menu />
       </header>
-      <main className="divide-y divide-white/10 px-5 md:px-15 lg:px-70">
+      <main className="divide-y divide-white/10 px-5 md:px-15 xl:px-40">
         <Hero />
         <Skills />
         {/* <Projects /> */}
@@ -28,7 +28,7 @@ const LandingPage = () => {
           <Contact />
         </Element>
       </main>
-      <footer className="bg-purple flex flex-col items-center px-5 py-4 md:flex-row-reverse md:items-start md:justify-between md:px-15 lg:px-70">
+      <footer className="bg-purple flex flex-col items-center px-5 py-4 md:flex-row-reverse md:items-start md:justify-between md:px-15 xl:px-40">
         <SocialMediaLinks />
         <p className="text-center text-xs leading-relaxed">{t('footer')}</p>
       </footer>

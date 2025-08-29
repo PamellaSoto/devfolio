@@ -6,38 +6,47 @@ import { FaWhatsapp, FaRegEnvelope } from 'react-icons/fa'
 const Contact = () => {
   const { t } = useTranslation()
   const contact = t('contact', { returnObjects: true })
+  const actionLink = t('links', { returnObjects: true })
 
   return (
-    <Element className="py-13">
+    <Element name={actionLink[4]} className="py-20">
       <div>
         <h2 className="mb-6 text-center md:text-left">
           <span>{contact.subtitle}</span>
           {contact.title}
         </h2>
         <p>{contact.text}</p>
-        <div>
-          <div>
+        <div className="mt-6 flex items-center">
+          <div className="bg-purple mr-4 inline-block rounded-full p-2">
             <FaWhatsapp size={25} />
           </div>
           <div>
             <h3>
-              <a href="#whatsapp">+55 (13) 99168-5115</a>
+              <a
+                className="text-yellow text-xl font-bold md:text-3xl"
+                href="#whatsapp"
+              >
+                +55 (13) 99168-5115
+              </a>
             </h3>
-            <p>WhatsApp</p>
+            <p className="m-0">WhatsApp</p>
           </div>
         </div>
 
-        <div>
-          <div>
-            <FaRegEnvelope size={25} />
+        <div className="mt-4 flex items-center">
+          <div className="bg-purple mr-4 inline-block rounded-full p-2">
+            <FaRegEnvelope size={22} />
           </div>
           <div>
             <h3>
-              <a href="mailto:pamellasoto.dev@gmail.com">
+              <a
+                className="text-yellow text-xl font-bold md:text-3xl"
+                href="mailto:pamellasoto.dev@gmail.com"
+              >
                 pamellasoto.dev@gmail.com
               </a>
             </h3>
-            <p>E-mail</p>
+            <p className="m-0">E-mail</p>
           </div>
         </div>
       </div>

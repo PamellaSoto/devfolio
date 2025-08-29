@@ -15,7 +15,7 @@ const Menu = () => {
 
   return (
     <>
-      <button onClick={toggleDropdown} className="md:hidden">
+      <button onClick={toggleDropdown} className="lg:hidden">
         {isOpen ? <HiXMark size={22} /> : <HiBars3 size={22} />}
       </button>
       {isOpen && (
@@ -56,7 +56,7 @@ const Menu = () => {
         </nav>
       )}
 
-      <nav className="hidden md:flex">
+      <nav className="hidden lg:flex">
         <ul className="mr-7 flex gap-5 border-r pr-7 uppercase">
           <li>
             <Link
