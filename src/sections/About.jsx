@@ -26,7 +26,7 @@ const About = () => {
         </h2>
         {about.text.map((item, key) => {
           return (
-            <p
+            <p className='mb-4'
               key={'about_' + key}
               dangerouslySetInnerHTML={{ __html: item }}
             ></p>
