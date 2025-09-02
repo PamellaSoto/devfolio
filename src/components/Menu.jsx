@@ -19,38 +19,65 @@ const Menu = () => {
         {isOpen ? <HiXMark size={22} /> : <HiBars3 size={22} />}
       </button>
       {isOpen && (
-        <nav>
+        <nav className="bg-new-black absolute top-15 right-2 rounded-lg border-1 px-6 py-4">
           <ul>
-            <li>
+            <li className="mt-0 border-b-1 pb-2">
               <LanguageSelector />
             </li>
             <li>
-              <Link to={menuLinks[0]} smooth={true} duration={500}>
+              <Link
+                className="btn-secondary block w-full px-2 py-1"
+                to={menuLinks[0]}
+                smooth={true}
+                duration={500}
+              >
                 {menu.home}
               </Link>
             </li>
             <li>
-              <Link to={menuLinks[1]} smooth={true} duration={500}>
+              <Link
+                className="btn-secondary block w-full px-2 py-1"
+                to={menuLinks[1]}
+                smooth={true}
+                duration={500}
+              >
                 {menu.skills}
               </Link>
             </li>
             <li>
-              <Link to={menuLinks[2]} smooth={true} duration={500}>
+              <Link
+                className="btn-secondary block w-full px-2 py-1"
+                to={menuLinks[2]}
+                smooth={true}
+                duration={500}
+              >
                 {menu.projects}
               </Link>
             </li>
             <li>
-              <Link to={menuLinks[3]} smooth={true} duration={500}>
+              <Link
+                className="btn-secondary block w-full px-2 py-1"
+                to={menuLinks[3]}
+                smooth={true}
+                duration={500}
+              >
                 {menu.about}
               </Link>
             </li>
             <li>
-              <Link to={menuLinks[4]} smooth={true} duration={500}>
+              <Link
+                className="btn-secondary block w-full px-2 py-1"
+                to={menuLinks[4]}
+                smooth={true}
+                duration={500}
+              >
                 {menu.contact}
               </Link>
             </li>
             <li>
-              <a href="#LINK">{menu.resume}</a>
+              <a className="btn-secondary block w-full px-2 py-1" href="#LINK">
+                {menu.resume}
+              </a>
             </li>
           </ul>
         </nav>
@@ -60,7 +87,7 @@ const Menu = () => {
         <ul className="mr-7 flex gap-5 border-r pr-7 uppercase">
           <li>
             <Link
-              className="hover:bg-purple cursor-pointer rounded-lg px-6 py-2"
+              className="btn-secondary"
               to={menuLinks[1]}
               smooth={true}
               duration={500}
@@ -70,7 +97,7 @@ const Menu = () => {
           </li>
           <li>
             <Link
-              className="hover:bg-purple cursor-pointer rounded-lg px-6 py-2"
+              className="btn-secondary"
               to={menuLinks[2]}
               smooth={true}
               duration={500}
@@ -80,7 +107,7 @@ const Menu = () => {
           </li>
           <li>
             <Link
-              className="hover:bg-purple cursor-pointer rounded-lg px-6 py-2"
+              className="btn-secondary"
               to={menuLinks[3]}
               smooth={true}
               duration={500}
@@ -90,7 +117,7 @@ const Menu = () => {
           </li>
           <li>
             <Link
-              className="hover:bg-purple cursor-pointer rounded-lg px-6 py-2"
+              className="btn-secondary"
               to={menuLinks[4]}
               smooth={true}
               duration={500}
@@ -99,10 +126,7 @@ const Menu = () => {
             </Link>
           </li>
           <li>
-            <a
-              className="hover:bg-purple cursor-pointer rounded-lg px-6 py-2"
-              href="#LINK"
-            >
+            <a className="btn-secondary" href="#LINK">
               {menu.resume}
             </a>
           </li>

@@ -15,11 +15,11 @@ const LandingPage = () => {
 
   return (
     <>
-      <header className="sticky flex items-center justify-between px-5 pt-5 md:px-15 xl:px-40">
+      <header className="bg-new-black/50 sticky top-0 z-2 flex items-center justify-between px-5 py-5 md:px-15 xl:px-30">
         <p className="mb-0 md:text-xl">pamellasoto.dev</p>
         <Menu />
       </header>
-      <main className="divide-y divide-white/10 px-5 md:px-15 xl:px-40">
+      <main className="divide-y divide-white/10 px-5 md:px-15 xl:px-30 2xl:px-45">
         <Hero />
         <Skills />
         {/* <Projects /> */}

@@ -9,11 +9,20 @@ const LanguageSelector = () => {
     i18n.changeLanguage(newLang)
   }
   return (
-    <button onClick={toggleLanguage}>
+    <button className="flex items-center gap-4" onClick={toggleLanguage}>
       <BsGlobe2 size={20} />
-      <div className="md:hidden">
-        {t('menu.lang') == 'PT-BR' ? <span>PT-BR</span> : <span>PT-BR</span>} /{' '}
-        {t('menu.lang') == 'EN' ? <span>EN</span> : <span>EN</span>}
+      <div className="flex items-center gap-2 lg:hidden">
+        {t('menu.lang') == 'PT-BR' ? (
+          <span className="hover:bg-purple/50 rounded-lg px-2 py-1">PT-BR</span>
+        ) : (
+          <span className="bg-purple rounded-lg px-2 py-1">PT-BR</span>
+        )}{' '}
+        /
+        {t('menu.lang') == 'EN' ? (
+          <span className="hover:bg-purple/50 rounded-lg px-2 py-1">EN</span>
+        ) : (
+          <span className="bg-purple rounded-lg px-2 py-1">EN</span>
+        )}
       </div>
     </button>
   )

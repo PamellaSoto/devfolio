@@ -13,7 +13,7 @@ const Hero = () => {
   return (
     <Element
       name={navLinks[0]}
-      className="flex flex-col items-center py-20 sm:justify-between md:flex-row"
+      className="flex flex-col items-center pt-10 pb-20 sm:justify-between md:flex-row"
     >
       <img src={myPhoto} className="md:hidden" />
       <div className="md:w-2/3">

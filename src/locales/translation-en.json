@@ -60,7 +60,10 @@
     "title": "Open to opportunities",
     "text": "Whether it's for work, collaborations, or networking, I'm always open to new connections. Let's talk!",
     "labels": ["Name", "Email", "Message"],
-    "button": "Send message"
+    "button": "Send message",
+    "formSending": "Sending...",
+    "formSuccess": "Message sent!", 
+    "formError" : "An error occured. Please try again or try sending me a message via +55 (13) 99168-5115."
   },
   "footer": "© 2025 pamellasoto.dev. All rights reserved."
 }

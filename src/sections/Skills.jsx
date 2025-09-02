@@ -13,20 +13,20 @@ const Skills = () => {
   return (
     <Element
       name={actionLink[1]}
-      className="flex flex-col items-center gap-6 py-20 md:items-end"
+      className="flex flex-col items-center gap-6 py-20 md:items-start lg:items-end"
     >
-      <div className="md:flex md:items-center md:justify-between">
+      <div className="md:items-center md:justify-between lg:flex">
         <h2 className="text-center md:text-left">
           <span>{skills.subtitle}</span>
           {skills.title}
         </h2>
         <p
-          className="md:w-6/12 xl:w-5/12"
+          className="lg:w-7/12"
           dangerouslySetInnerHTML={{ __html: skills.text }}
         ></p>
       </div>
 
-      <div className="mt-10 flex w-full flex-col gap-20 md:flex-row md:gap-6">
+      <div className="mt-10 flex w-full flex-col gap-20 lg:flex-row lg:gap-6">
         <div className="bg-purple/15 border-purple/30 relative flex-1 rounded-md border-2 px-6 pb-6">
           <div className="bg-purple absolute top-[-30px] inline-block rounded-full p-4 hover:scale-110">
             <FaCode size={32} />
