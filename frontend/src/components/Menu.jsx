@@ -19,7 +19,7 @@ const Menu = () => {
         {isOpen ? <HiXMark size={22} /> : <HiBars3 size={22} />}
       </button>
       {isOpen && (
-        <nav className="bg-new-black absolute top-15 right-2 rounded-lg border-1 px-6 py-4">
+        <nav className="bg-new-black absolute top-15 right-2 rounded-lg border-1 px-6 py-4 lg:hidden">
           <ul>
             <li className="mt-0 border-b-1 pb-2">
               <LanguageSelector />

@@ -31,7 +31,7 @@ app.post('/api/contact', async (req, res) => {
       from: process.env.MAIL_USER,
       to: process.env.MAIL_TO,
       replyTo: email,
-      subject: `Nova mensagem de ${name}`,
+      subject: `Nova mensagem de ${name} pelo site`,
       html: `Nome: ${name}<br/>Email: ${email}<br/>Mensagem: ${message}`,
     })
     res.json({ ok: true })

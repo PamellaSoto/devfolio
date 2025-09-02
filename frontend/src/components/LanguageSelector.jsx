@@ -10,7 +10,10 @@ const LanguageSelector = () => {
   }
   return (
     <button className="flex items-center gap-4" onClick={toggleLanguage}>
-      <BsGlobe2 size={20} />
+      <BsGlobe2
+        className="lg:hover:text-purple hover:scale-105 hover:cursor-pointer active:scale-95"
+        size={20}
+      />
       <div className="flex items-center gap-2 lg:hidden">
         {t('menu.lang') == 'PT-BR' ? (
           <span className="hover:bg-purple/50 rounded-lg px-2 py-1">PT-BR</span>

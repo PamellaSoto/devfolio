@@ -9,10 +9,11 @@ const Contact = () => {
   const contact = t('contact', { returnObjects: true })
   const actionLink = t('links', { returnObjects: true })
 
-  const [status, setStatus] = useState({ state: "idle", msg: "" })
+  const apiUrl = import.meta.env.VITE_API_URL
+  const [status, setStatus] = useState({ state: 'idle', msg: '' })
   async function handleSubmit(e) {
-    e.preventDefault();  
-    setStatus({state: "loading", msg: contact.formSending});
+    e.preventDefault()
+    setStatus({ state: 'loading', msg: contact.formSending })
 
     const form = e.currentTarget
     const payload = {
@@ -23,15 +24,17 @@ const Contact = () => {
     }
 
     try {
-      const res = await fetch('http://localhost:3001/api/contact', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+      const res = await fetch(apiUrl, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
         body: JSON.stringify(payload),
       })
 
       const data = await res.json()
       if (data.ok) {
-        setStatus({ state: 'success', msg: contact.formSuccess})
+        setStatus({ state: 'success', msg: contact.formSuccess })
         form.reset()
       } else {
         setStatus({ state: 'error', msg: data.error || contact.formError })
@@ -85,7 +88,7 @@ const Contact = () => {
       </div>
 
       <div className="lg:flex-1">
-        <form onSubmit={handleSubmit} className="flex flex-col gap-6 mt-10">
+        <form onSubmit={handleSubmit} className="mt-10 flex flex-col gap-6">
           <div className="sr-only">
             <label htmlFor="_honey">Não preencher</label>
             <input id="_honey" name="_honey" tabIndex="-1" autoComplete="off" />
@@ -139,12 +142,12 @@ const Contact = () => {
 
           {status.state !== 'idle' && (
             <p
-              className={`text-sm mt-2 ${
+              className={`mt-2 text-sm ${
                 status.state === 'error'
                   ? 'text-red-400'
                   : status.state === 'success'
-                  ? 'text-green-400'
-                  : 'text-yellow-400'
+                    ? 'text-green-400'
+                    : 'text-yellow-400'
               }`}
             >
               {status.msg}

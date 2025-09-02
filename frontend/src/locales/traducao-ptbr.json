@@ -62,8 +62,8 @@
     "labels": ["Nome", "E-mail", "Mensagem"],
     "button": "Enviar mensagem",
     "formSending": "Enviando...",
-    "formSuccess": "Mensagem enviada com sucesso!", 
-    "formError" : "Erro ao enviar. Por favor tente novamente ou entre em contato via +55 (13) 99168-5115."
+    "formSuccess": "Mensagem enviada com sucesso!",
+    "formError": "Erro ao enviar. Por favor tente novamente ou entre em contato via +55 (13) 99168-5115."
   },
   "footer": "© 2025 pamellasoto.dev. Todos os direitos reservados."
 }
