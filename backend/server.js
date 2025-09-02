@@ -28,7 +28,7 @@ app.post('/api/contact', async (req, res) => {
 
   try {
     await transporter.sendMail({
-      from: process.env.MAIL_USER,
+      from: email,
       to: process.env.MAIL_TO,
       replyTo: email,
       subject: `Nova mensagem de ${name} pelo site`,
