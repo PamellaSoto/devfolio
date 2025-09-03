@@ -13,7 +13,7 @@ const About = () => {
       <div className="md:max-w-2/6 lg:w-1/3">
         <img
           className="hidden rounded-lg md:block"
-          src="/src/assets/cat-lola-1.jpg"
+          src={CatPhoto}
           alt="My cat Lola"
         />
         <p className="mt-4 hidden text-xs leading-relaxed italic md:block">
