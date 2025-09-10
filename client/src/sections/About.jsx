@@ -1,7 +1,7 @@
 import { useTranslation } from 'react-i18next'
 
 import { Element } from 'react-scroll'
-import CatPhoto from '../assets/cat-lola-1.jpg'
+import CatPhoto from '../assets/cat-lola.jpg'
 
 const About = () => {
   const { t } = useTranslation()

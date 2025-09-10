@@ -15,7 +15,7 @@ const Hero = () => {
       name={navLinks[0]}
       className="flex flex-col items-center pt-10 pb-20 sm:justify-between md:flex-row"
     >
-      <img src={myPhoto} className="md:hidden" />
+      <img src={myPhoto} className="md:hidden" alt='A photo of Pamella Sotomayor'/>
       <div className="md:w-2/3 lg:w-full">
         <h1 className="text-center md:text-left">
           <span>{hero.subtitle}</span>
@@ -49,7 +49,7 @@ const Hero = () => {
         </div>
       </div>
       <div className="hidden items-center justify-end md:flex md:w-3/4 md:flex-col xl:flex-row">
-        <img src={myPhoto} className="hover:scale-105" />
+        <img src={myPhoto} className="hover:scale-105" alt='A photo of Pamella Sotomayor' />
         <SocialMediaLinks
           css={
             'md:inline-flex md:flex-row xl:flex-col md:mt-[-30px] xl:mt-0 xl:ml-6 '
