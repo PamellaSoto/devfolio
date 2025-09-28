@@ -1,69 +1,61 @@
 {
   "menu": {
     "home": "Home",
-    "skills": "Skills",
     "projects": "Projects",
+    "skills": "Skills",
     "about": "About Me",
     "contact": "Contact",
     "resume": "Download Resume",
     "lang": "PT-BR"
   },
-  "links": ["home", "skills", "projects", "about", "contact"],
+  "links": ["home", "projects", "skills", "about", "contact"],
   "hero": {
-    "subtitle": "// Hi, I'm Pamella Sotomayor",
+    "subtitle": "Hi, I'm Pamella Soto",
     "title": "Fullstack Developer",
+    "text": "Over <b>2 years of hands-on experience in web development, Git/GitHub, and working with teams.</b><br />Passionate about building <b>accessible, high-performance, and user-centered interfaces</b>, combining design and technology to turn ideas into functional web applications.",
+    "resumeDownloadBtn": "Download Resume"
+  },
+  "projects": {
+    "title": "Featured Projects",
+    "button": "See more on Github",
     "list": [
-      "🚀 Hands-on experience in frontend and backend projects",
-      "🎨 Focus on UI, accessibility, and user-centered design",
-      "🌱 Dedicated to learning, and working on collaborations"
-    ],
-    "contactBtn": "Get in touch",
-    "projectBtn": "View my projects"
+      {
+        "name": "Moon Stationery",
+        "year": "2025",
+        "description": "Descrição em ingles temporário.",
+        "stack": ["Java", "Spring Boot"],
+        "link": "https://github.com/PamellaSoto/MoonStationery",
+        "thumbnail": "https://placehold.co/300x180/EEE/31343C",
+        "previewDemo": "https://placehold.co/800x500/EEE/31343C",
+        "buttons": ["Open project", "Close"]
+      }
+    ]
   },
   "skills": {
-    "subtitle": "// My Skills",
-    "title": "Why work with me?",
-    "text": "I have over <b>2 years of hands-on experience in web development</b>, building responsive and interactive interfaces. My background includes developing and maintaining WordPress websites, as well as working on academic projects involving <b>CRUD operations and API integration.</b>",
-    "frontendText": "Mobile-first and responsive design",
-    "frontendText2": "SEO and page optimization",
-    "backendText": "DB Modeling",
-    "design": {
-      "title": "UI/UX Design",
-      "figma": "Figma (Wireframes, interactive prototyping)",
-      "usabilidade": "Usability & Accessibility Testing"
-    },
+    "title": "My skills",
+    "text": "Throughout my journey, I have delivered <b>over 30 WordPress websites</b> and worked on academic projects involving <b>CRUD operations and API integration.</b> I continuously strengthen my ability to learn fast, adapt to new challenges, and apply creative problem-solving, while expanding my expertise with modern tools to build impactful and scalable solutions as a developer.",
+    "frontend": "SEO and performance",
+    "backend": "Database modeling",
+    "design": "Wireframes and Prototyping",
     "other": {
       "title": "Other Skills",
-      "agile": "Agile Workflows (Sprints, Kanban)",
-      "office": ""
+      "problem": "Problem Solving",
+      "office": "Office 365"
     },
     "button": "Send me an email"
   },
-  "projects": {
-    "title": "My Projects",
-    "subtitle": "// What I've built so far",
-    "button": "Load more"
-  },
   "about": {
-    "subtitle": "// About Me",
-    "title": "Balance, Code and Creativity",
+    "title": "About me",
     "text": [
-      "I'm a dedicated developer always seeking opportunities to expand my knowledge. Besides my academic background, I enjoy studying by myself to deepen my skills and explore new areas of technology.",
-      "Throughout my years as a dev, I've worked on projects with different levels of complexity, and each experience has <b>taught me valuable lessons.</b> I value <b>collaboration and clean code</b>, always aiming for quality and growth.",
-      "I'm interested in working with <b>UI/UX and interface design</b>, aiming to create applications that are not only functional but also visually appealing and accessible.",
-      "Outside of coding, I look for balance. When I'm not studying or working, I enjoy <b>watching series and spending time with the people I love.</b> These moments help me recharge and return to work with a clearer, more creative mindset — ready to take on new challenges!"
+      "I am currently pursuing a degree in <b>Internet Systems at FATEC Rubens Lara</b>, constantly evolving and open to learning while exploring <b>new opportunities within the tech industry.</b>",
+      "Throughout my academic and practical journey, I have learned to value <b>collaboration, organization, and quality</b>— principles I consider essential for growing as a professional. I have a strong interest in <b>UI/UX and interface design</b>, aiming to create solutions that are <b>functional, accessible, and visually engaging.</b>",
+      "Outside of work, I enjoy spending time <b>watching series and spending time with loved ones and my cats</b> (the one in the photo is Lola). These moments recharge my creativity and allow me to return to work with fresh energy and focus."
     ],
-    "cats": "I also love spending time with my cats! They are the perfect little companions during my study sessions."
+    "catAlt": "Photo of a brown cat named Lola sleeping"
   },
   "contact": {
-    "subtitle": "//Get in touch",
-    "title": "Open to opportunities",
-    "text": "Whether it's for work, collaborations, or networking, I'm always open to new connections. Let's talk!",
-    "labels": ["Name", "Email", "Message"],
-    "button": "Send message",
-    "formSending": "Sending...",
-    "formSuccess": "Message sent!",
-    "formError": "An error occured. Please try again or try sending me a message via +55 (13) 99168-5115."
+    "title": "Contact Me",
+    "text": "I'm always open to new connections. Follow me on social media and let's talk!"
   },
   "footer": "© 2025 pamellasoto.dev. All rights reserved."
 }

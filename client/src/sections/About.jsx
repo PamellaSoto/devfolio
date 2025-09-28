@@ -1,49 +1,30 @@
 import { useTranslation } from 'react-i18next'
 
-import { Element } from 'react-scroll'
 import CatPhoto from '../assets/cat-lola.jpg'
 
-const About = () => {
+const About = ({ id }) => {
   const { t } = useTranslation()
   const about = t('about', { returnObjects: true })
-  const actionLink = t('links', { returnObjects: true })
 
   return (
-    <Element name={actionLink[3]} className="py-20 md:flex md:gap-15">
-      <div className="md:max-w-2/6 lg:w-1/3">
-        <img
-          className="hidden rounded-lg md:block"
-          src={CatPhoto}
-          alt="My cat Lola"
-        />
-        <p className="mt-4 hidden text-xs leading-relaxed italic md:block">
-          {about.cats}
-        </p>
-      </div>
-      <div className="lg:w-2/3">
-        <h2 className="mb-6 text-center md:text-left">
+    <section id={id} className="bg-purple/10 rounded-md p-5 flex-col-reverse flex md:flex-row gap-6 md:gap-15 md:p-10">
+      <img className="rounded-md" src={CatPhoto} alt="My cat Lola" />
+      <div>
+        <h2 className='mb-6'>
           <span>{about.subtitle}</span>
           {about.title}
         </h2>
         {about.text.map((item, key) => {
           return (
             <p
-              className="mb-4"
+              className="mb-3"
               key={'about_' + key}
               dangerouslySetInnerHTML={{ __html: item }}
             ></p>
           )
         })}
-        <img
-          className="mt-6 rounded-lg md:hidden"
-          src={CatPhoto}
-          alt="My cat Lola"
-        />
-        <p className="mt-4 text-xs leading-relaxed italic md:hidden">
-          {about.cats}
-        </p>
       </div>
-    </Element>
+    </section>
   )
 }
 

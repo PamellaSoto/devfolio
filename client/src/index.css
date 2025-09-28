@@ -1,11 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 @import 'tailwindcss';
 @tailwind base;
 @tailwind utilities;
 
 @theme {
-  --font-heading: 'Space Grotesk', sans-serif;
-  --font-body: 'Space Mono', monospace;
+  --font-dm-sans: 'DM Sans', sans-serif;
 
   --color-new-black: #0e0e0f;
   --color-purple: #5534b2;
@@ -14,49 +13,48 @@
 
 @layer base {
   body {
-    @apply font-body text-[0.9em] text-white;
+    @apply font-dm-sans text-[0.9em] text-white;
   }
 
   h1,
   h2,
   h3 {
-    @apply font-heading font-bold;
+    @apply font-medium;
   }
-
-  h1 {
-    @apply text-[2em] md:text-3xl lg:text-6xl;
-  }
-
   h2 {
-    @apply text-3xl md:text-4xl;
+    @apply text-center text-3xl md:text-left md:text-4xl;
   }
   h3 {
-    @apply md:text-2xl;
-  }
-
-  h1 > span,
-  h2 > span {
-    @apply font-body text-yellow mb-2 block text-base font-normal;
+    @apply text-xl;
   }
 
   p,
   li {
-    @apply mt-2 leading-6;
+    @apply text-justify leading-7 md:text-left;
   }
 }
 
 /* Custom components */
 @layer components {
-  * {
-    @apply transition-all duration-[0.5s] ease-in-out;
-  }
   .link {
     @apply cursor-pointer font-medium hover:underline;
   }
   .btn-primary {
-    @apply bg-purple inline-flex cursor-pointer items-center justify-center rounded-lg px-6 py-2 text-center font-medium uppercase hover:scale-105 hover:brightness-90 active:scale-95 active:brightness-80;
+    @apply bg-purple inline-flex cursor-pointer items-center justify-center rounded-md px-6 py-2 text-center font-medium text-base;
   }
   .btn-secondary {
-    @apply hover:bg-purple cursor-pointer rounded-lg px-6 py-2;
+    @apply hover:bg-purple cursor-pointer rounded-md px-6 py-2;
+  }
+
+  .flex-space-between {
+    @apply flex flex-col justify-between md:flex-row md:items-center;
+  }
+
+  .small-text {
+    @apply text-sm text-white/75;
+  }
+
+  .h3-projects {
+    @apply text-base md:text-xl;
   }
 }

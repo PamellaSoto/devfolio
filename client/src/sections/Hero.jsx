@@ -1,62 +1,69 @@
 import { useTranslation } from 'react-i18next'
-import { Link, Element } from 'react-scroll'
 
-import { IoIosArrowRoundUp } from 'react-icons/io'
 import myPhoto from '../assets/pamella-soto.png'
-import SocialMediaLinks from '../components/SocialMediaLinks'
 
-const Hero = () => {
+import { TbBrandGithubFilled } from 'react-icons/tb'
+import { FaLinkedinIn, FaEnvelope } from 'react-icons/fa'
+
+const Hero = ({ id }) => {
   const { t } = useTranslation()
   const hero = t('hero', { returnObjects: true })
-  const navLinks = t('links', { returnObjects: true })
 
   return (
-    <Element
-      name={navLinks[0]}
-      className="flex flex-col items-center pt-10 pb-20 sm:justify-between md:flex-row"
+    <section
+      id={id}
+      className="flex flex-col-reverse items-center md:flex-row md:justify-between md:gap-30"
     >
-      <img src={myPhoto} className="md:hidden" alt='A photo of Pamella Sotomayor'/>
-      <div className="md:w-2/3 lg:w-full">
-        <h1 className="text-center md:text-left">
-          <span>{hero.subtitle}</span>
-          {hero.title}
+      <div className="flex flex-col md:w-3/5 lg:w-full">
+        <h1 className="text-center text-[1.5em] md:text-left md:text-3xl">
+          {hero.subtitle}
+          <br />
+          <span className="text-purple text-3xl md:text-4xl lg:text-5xl">
+            {hero.title}
+          </span>
         </h1>
 
-        <ul className="mt-4">
-          {hero.list.map((item, key) => {
-            return <li key={'hero_' + key}>{item}</li>
-          })}
-        </ul>
+        <p className='mt-2' dangerouslySetInnerHTML={{ __html: hero.text }}></p>
 
-        <div className="mt-8 flex gap-4 sm:items-center md:mt-12">
-          <Link
-            className="btn-primary"
-            to={navLinks[4]}
-            smooth={true}
-            duration={500}
+        <div className="flex flex-col gap-6 items-center md:flex-row mt-6 lg:mt-10">
+          <a
+            className="btn-primary w-full md:w-fit md:self-start"
+            href="https://drive.google.com/drive/folders/1Ucbikn6F80XXt8umzWzRJQFPBBYXw09x?usp=drive_link"
+            target="_blank"
+            aria-label="See CV folder on Google Drive"
           >
-            {hero.contactBtn}
-          </Link>
-          <Link
-            className="link inline-flex items-center"
-            to={navLinks[2]}
-            smooth={true}
-            duration={500}
-          >
-            {hero.projectBtn}
-            <IoIosArrowRoundUp size={22} className="inline-block rotate-45" />
-          </Link>
+            {hero.resumeDownloadBtn}
+          </a>
+          <div className="flex gap-10">
+            <a
+              href="https://github.com/PamellaSoto"
+              target="_blank"
+              aria-label="Go to Github"
+            >
+              <TbBrandGithubFilled size={20} />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/web-pamella-lopes/"
+              target="_blank"
+              aria-label="Go to Linkedin"
+            >
+              <FaLinkedinIn size={20} />
+            </a>
+            <a
+              href="mailto:pamellasoto.dev@gmail.com"
+              aria-label="Send an email"
+            >
+              <FaEnvelope size={20} />
+            </a>
+          </div>
         </div>
       </div>
-      <div className="hidden items-center justify-end md:flex md:w-3/4 md:flex-col xl:flex-row">
-        <img src={myPhoto} className="hover:scale-105" alt='A photo of Pamella Sotomayor' />
-        <SocialMediaLinks
-          css={
-            'md:inline-flex md:flex-row xl:flex-col md:mt-[-30px] xl:mt-0 xl:ml-6 '
-          }
-        />
-      </div>
-    </Element>
+      <img
+        src={myPhoto}
+        className="self-center w-10/12 mb-5 md:w-5/12 lg:w-4/12"
+        alt="A photo of Pamella Sotomayor"
+      />
+    </section>
   )
 }
 

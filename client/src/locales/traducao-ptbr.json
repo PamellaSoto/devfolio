@@ -1,69 +1,61 @@
 {
   "menu": {
     "home": "Início",
-    "skills": "Skills",
     "projects": "Projetos",
+    "skills": "Skills",
     "about": "Sobre mim",
     "contact": "Contato",
-    "resume": "Baixar meu CV",
+    "resume": "Baixar currículo",
     "lang": "EN"
   },
-  "links": ["inicio", "skills", "projetos", "sobre-mim", "contato"],
+  "links": ["inicio", "projetos", "skills", "sobre-mim", "contato"],
   "hero": {
-    "subtitle": "// Olá, eu sou Pamella Sotomayor",
+    "subtitle": "Olá, eu sou Pamella Soto",
     "title": "Desenvolvedora Fullstack",
+    "text": "Possuo <b>mais de 2 anos de experiência prática em desenvolvimento web e Git/GitHub.</b><br />Quero criar <b>interfaces acessíveis, performáticas e centradas no usuário</b>, unindo design e tecnologia para transformar ideias em aplicações web funcionais.",
+    "resumeDownloadBtn": "Baixar currículo"
+  },
+  "projects": {
+    "title": "Meus Projetos",
+    "button": "Ver mais projetos no Github",
     "list": [
-      "🚀 Experiência prática em projetos frontend e backend",
-      "🎨 Foco em UI, acessibilidade e design centrado no usuário",
-      "🌱 Desenvolvimento contínuo, aprendizado e colaboração"
-    ],
-    "contactBtn": "Fale comigo",
-    "projectBtn": "Ver meus projetos"
+      {
+        "name": "Moon Stationery",
+        "year": "2025",
+        "description": "Projeto de gestão de papelaria online, CRUD completo e integração com APIs.",
+        "stack": ["Java", "Spring Boot"],
+        "link": "https://github.com/PamellaSoto/MoonStationery",
+        "thumbnail": "https://placehold.co/300x180/EEE/31343C",
+        "previewDemo": "https://placehold.co/800x500/EEE/31343C",
+        "buttons": ["Abrir projeto", "Fechar"]
+      }
+    ]
   },
   "skills": {
-    "subtitle": "// Minhas habilidades",
-    "title": "Por que trabalhar comigo?",
-    "text": "Tenho mais de <b>2 anos de experiência prática em desenvolvimento web</b>, criando interfaces responsivas e interativas. Minha experiência inclui o desenvolvimento e manutenção de sites em WordPress, além de projetos acadêmicos envolvendo <b>operações CRUD e integração de APIs.</b>",
-    "frontendText": "Design mobile-first e responsivo",
-    "frontendText2": "SEO e otimização de páginas",
-    "backendText": "Modelagem de Banco de Dados",
-    "design": {
-      "title": "Design UI/UX",
-      "figma": "Figma (Wireframes, prototipagem interativa)",
-      "usabilidade": "Testes de Usabilidade & Acessibilidade"
-    },
+    "title": "Minhas skills",
+    "text": "Ao longo da minha jornada, <b>desenvolvi +30 sites em WordPress</b>, além de projetos acadêmicos envolvendo <b>operações CRUD e integração de APIs.</b> Venho fortalecendo minha capacidade de aprender rápido e resolver problemas de forma criativa, evoluindo minhas competências e explorando novas ferramentas que <b>ampliem meu impacto como desenvolvedora.</b>",
+    "frontend": "SEO e performance",
+    "backend": "Modelagem de dados",
+    "design": "Wireframe e Protótipos",
     "other": {
       "title": "Outras habilidades",
-      "agile": "Metodologias Ágeis (Sprints, Kanban)",
+      "problem": "Resolução de Problemas",
       "office": "Pacote Office"
     },
     "button": "Entrar em Contato"
   },
-  "projects": {
-    "title": "Meus Projetos",
-    "subtitle": "// O que eu desenvolvi até aqui",
-    "button": "Carregar mais"
-  },
   "about": {
-    "subtitle": "// Sobre mim",
-    "title": "Equilíbrio, Código e Criatividade",
+    "title": "Sobre mim",
     "text": [
-      "Sou estudante de Sistemas para Internet na <b>FATEC Rubens Lara</b> e estou buscando oportunidades para expandir meu conhecimento. Além do currículo acadêmico, estudo por conta própria para expandir meus conhecimentos e explorar diferentes áreas da tecnologia.",
-      "Na minha trajetória já participei de projetos de diferentes níveis de complexidade, e cada experiência me <b>trouxe novas lições.</b> Valorizo a <b>colaboração e código limpo</b>, sempre com foco em qualidade e evolução contínua.",
-      "Tenho grande interesse por <b>UI/UX e design de interfaces</b>, buscando criar aplicações que não sejam somente funcionais, mas bonitas e acessíveis.",
-      "Na minha vida pessoal, eu procuro equilíbrio. Quando não estou estudando ou desenvolvendo, gosto de <b>assistir séries e passar tempo com as pessoas que eu amo.</b> Esses momentos me ajudam a recarregar as energias e voltar ao trabalho com uma cabeça mais leve, criativa e pronta para enfrentar novos desafios!"
+      "Estou cursando <b>Sistemas para Internet na FATEC Rubens Lara</b> e sigo em constante evolução, sempre aberta a aprender e explorar <b>novas possibilidades dentro do mundo da tecnologia.</b>",
+      "Na minha trajetória acadêmica e prática, aprendi a valorizar a <b>colaboração, organização e qualidade</b>, pontos que considero essenciais para crescer como profissional. Tenho um olhar especial para <b>UI/UX e design de interfaces</b>, buscando desenvolver soluções que que não sejam <b>somente funcionais, mas bonitas e acessíveis.</b>",
+      "Na minha vida pessoal, eu procuro equilíbrio. Gosto de recarregar minhas energias <b>assistindo séries e passando tempo com as pessoas que amo e meus gatos</b> (essa da foto é a Lola), pronta para voltar ao trabalho com uma cabeça mais leve, criativa e pronta para enfrentar novos desafios!"
     ],
-    "cats": "Eu também amo passar tempo com meus gatos! Eles fazem excelentes companhias durante minhas sessões de estudo."
+    "catAlt": "Foto da gata chamada Lola dormindo"
   },
   "contact": {
-    "subtitle": "// Entre em contato",
-    "title": "Aberta a oportunidades",
-    "text": "Seja para trabalho, parcerias ou networking, estarei sempre aberta a novas conexões. Vamos conversar?",
-    "labels": ["Nome", "E-mail", "Mensagem"],
-    "button": "Enviar mensagem",
-    "formSending": "Enviando...",
-    "formSuccess": "Mensagem enviada com sucesso!",
-    "formError": "Erro ao enviar. Por favor tente novamente ou entre em contato via +55 (13) 99168-5115."
+    "title": "Entre em Contato",
+    "text": "Estou sempre aberta a novas conexões. Me siga nas redes sociais e vamos conversar!"
   },
   "footer": "© 2025 pamellasoto.dev. Todos os direitos reservados."
 }

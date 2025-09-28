@@ -1,112 +1,72 @@
 import { useTranslation } from 'react-i18next'
-import { Link, Element } from 'react-scroll'
 
-import { FaCode, FaDatabase } from 'react-icons/fa6'
-import { IoColorPalette } from 'react-icons/io5'
-import { IoSettingsSharp } from 'react-icons/io5'
-
-const Skills = () => {
+const Skills = ({ id }) => {
   const { t } = useTranslation()
   const skills = t('skills', { returnObjects: true })
-  const actionLink = t('links', { returnObjects: true })
 
   return (
-    <Element
-      name={actionLink[1]}
-      className="flex flex-col items-center gap-6 py-20 md:items-start lg:items-end"
-    >
-      <div className="md:items-center md:justify-between lg:flex">
-        <h2 className="text-center md:text-left">
-          <span>{skills.subtitle}</span>
-          {skills.title}
-        </h2>
-        <p
-          className="lg:w-7/12"
-          dangerouslySetInnerHTML={{ __html: skills.text }}
-        ></p>
-      </div>
-
-      <div className="mt-10 flex w-full flex-col gap-20 lg:flex-row lg:gap-6">
-        <div className="bg-purple/15 border-purple/30 relative flex-1 rounded-md border-2 px-6 pb-6">
-          <div className="bg-purple absolute top-[-30px] inline-block rounded-full p-4 hover:scale-110">
-            <FaCode size={32} />
-          </div>
-          <div className="flex cursor-pointer justify-between">
-            <div className="flex items-center gap-6">
-              <h3 className="mt-15 uppercase">Frontend</h3>
-            </div>
-          </div>
-          <ul>
-            <li>JavaScript, TailwindCSS</li>
-            <li>ReactJS, React Router, React Hook Form</li>
-            <li>{skills.frontendText}</li>
-            <li>{skills.frontendText2}</li>
+    <section id={id} className="flex flex-col md:justify-between gap-6 lg:gap-10">
+      <h2>{skills.title}</h2>
+      <p className="md:mt-[-20px]" dangerouslySetInnerHTML={{ __html: skills.text }}></p>
+      <div className="flex flex-col md:flex-row md:justify-between gap-6 md:gap-10">
+        {/* Frontend */}
+        <div>
+          <h3 className="uppercase mb-3 md:mb-6">Frontend</h3>
+          <ul className="flex flex-wrap gap-x-6 gap-y-2 md:flex-col">
+            <li>JavaScript (ES6+)</li>
+            <li>TailwindCSS</li>
+            <li>ReactJS</li>
+            <li>HTML5, CSS3</li>
+            <li>RadixUI</li>
+            <li>{skills.frontend}</li>
           </ul>
         </div>
-
-        <div className="bg-purple/15 border-purple/30 relative flex-1 rounded-md border-2 px-6 pb-6">
-          <div className="bg-purple absolute top-[-30px] inline-block rounded-full p-4 hover:scale-110">
-            <FaDatabase size={32} />
-          </div>
-          <div className="flex cursor-pointer justify-between">
-            <div className="flex items-center gap-6">
-              <h3 className="mt-15 uppercase">Backend</h3>
-            </div>
-          </div>
-          <ul>
-            <li>Java (Spring Boot)</li>
-            <li>REST API</li>
+        {/* Backend */}
+        <div>
+          <h3 className="uppercase mb-3 md:mb-6">Backend</h3>
+          <ul className="flex flex-wrap gap-x-6 gap-y-2 md:flex-col">
+            <li>Java</li>
+            <li>Spring Boot</li>
             <li>Node.js</li>
-            <li>MySQL, PostgreSQL, Firebase</li>
-            <li>{skills.backendText}</li>
+            <li>MySQL, PostgreSQL</li>
+            <li>Modelagem de Dados</li>
+            <li>MongoDB, Firebase</li>
           </ul>
         </div>
-
-        <div className="bg-purple/15 border-purple/30 relative flex-1 rounded-md border-2 px-6 pb-6">
-          <div className="bg-purple absolute top-[-30px] inline-block rounded-full p-4 hover:scale-110">
-            <IoColorPalette size={32} />
-          </div>
-          <div className="flex cursor-pointer justify-between">
-            <div className="flex items-center gap-6">
-              <h3 className="mt-15 uppercase">{skills.design.title}</h3>
-            </div>
-          </div>
-          <ul>
-            <li>{skills.design.figma}</li>
-            <li>Wireframe</li>
-            <li>{skills.design.usabilidade}</li>
+        {/* Web Design */}
+        <div>
+          <h3 className="uppercase mb-3 md:mb-6">Web Design</h3>
+          <ul className="flex flex-wrap gap-x-6 gap-y-2 md:flex-col">
+            <li>Figma</li>
+            <li>Wireframe e Protótipos</li>
+            <li>Design Systems</li>
+            <li>WordPress</li>
+            <li>Illustrator, Canva</li>
             <li>Design Systems</li>
           </ul>
         </div>
-
-        <div className="bg-purple/15 border-purple/30 relative flex-1 rounded-md border-2 px-6 pb-6">
-          <div className="bg-purple absolute top-[-30px] inline-block rounded-full p-4 hover:scale-110">
-            <IoSettingsSharp size={32} />
-          </div>
-          <div className="flex cursor-pointer justify-between">
-            <div className="flex items-center gap-6">
-              <h3 className="mt-15 uppercase">{skills.other.title}</h3>
-            </div>
-          </div>
-          <ul>
+        {/* Other */}
+        <div>
+          <h3 className="uppercase mb-3 md:mb-6">{skills.other.title}</h3>
+          <ul className="flex flex-wrap gap-x-6 gap-y-2 md:flex-col">
             <li>Git & GitHub</li>
-            <li>Wordpress</li>
-            <li>{skills.other.agile}</li>
+            <li>Lighthouse, DevTools</li>
+            <li>{skills.other.problem}</li>
+            <li>Deployment e Hosting</li>
+            <li>Scrum e Kanban</li>
             <li>{skills.other.office}</li>
-            <li>Canva, Photoshop, Illustrator</li>
           </ul>
         </div>
       </div>
 
-      <Link
-        className="btn-primary mt-4"
-        to={actionLink[4]}
-        smooth={true}
-        duration={500}
+      <a
+        className="btn-primary w-full md:w-fit"
+        href="https://github.com/PamellaSoto?tab=repositories"
+        target="_blank"
       >
         {skills.button}
-      </Link>
-    </Element>
+      </a>
+    </section>
   )
 }
 
