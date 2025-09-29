@@ -1,5 +1,5 @@
 import { useTranslation } from 'react-i18next'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
 const Projects = ({ id }) => {
   const { t } = useTranslation()
@@ -11,11 +11,23 @@ const Projects = ({ id }) => {
   const handleOpenModal = (project) => setSelectedProject(project)
   const handleCloseModal = () => setSelectedProject(null)
 
+  useEffect(() => {
+    if (selectedProject) {
+      document.body.style.overflow = 'hidden'
+    } else {
+      document.body.style.overflow = 'auto'
+    }
+
+    return () => {
+      document.body.style.overflow = 'auto'
+    }
+  }, [selectedProject])
+
   return (
     <section id={id} className="flex flex-col gap-6 lg:gap-10">
       <div className="flex-space-between">
         <h2>{projects.title}</h2>
-        <p className="small-text text-center">Latest updated: 28/09/2025</p>
+        <p className="small-text text-center">{projects.lastUpdated} 28/09/2025</p>
       </div>
 
       <div className="grid grid-cols-1 gap-x-7 gap-y-5 md:grid-cols-3 md:gap-y-10">
@@ -26,8 +38,8 @@ const Projects = ({ id }) => {
             onClick={() => handleOpenModal(proj)}
           >
             <img
-              src="https://placehold.co/300x180/EEE/31343C"
-              className="rounded-md"
+              src={proj.thumbnail}
+              className="rounded-md h-[220px] object-cover object-top max-w-full"
               alt={proj.name}
             />
             <div className="flex-space-between">
@@ -54,25 +66,33 @@ const Projects = ({ id }) => {
           onClick={handleCloseModal}
         >
           <div
-            className="bg-new-black m-5 w-full max-w-lg rounded-lg p-6 md:m-10 flex flex-col gap-3"
+            className="bg-new-black custom-scroll m-5 flex max-h-[85vh] w-full max-w-5/12 flex-col gap-3 overflow-y-auto rounded-lg p-6 md:m-10"
             onClick={(e) => e.stopPropagation()}
           >
             <img
-              src="https://placehold.co/800x500/EEE/31343C"
-              className="rounded-md"
+              src={selectedProject.thumbnail}
+              className="rounded-md h-[300px] object-cover object-top max-w-full"
               alt={selectedProject.name}
             />
-            <div className="flex items-center justify-between mt-3">
+            <div className="mt-3 flex items-center justify-between">
               <h4 className="text-xl font-bold md:text-3xl">
                 {selectedProject.name}
               </h4>
               <p className="small-text">{selectedProject.year}</p>
             </div>
-            <p>{selectedProject.description}</p>
+            {selectedProject.description.map((item, key) => {
+              return (
+                <p
+                  className="mb-3"
+                  key={'about_' + key}
+                  dangerouslySetInnerHTML={{ __html: item }}
+                ></p>
+              )
+            })}
             <p>
               <b>Stack:</b> {selectedProject.stack.join(', ')}
             </p>
-            <div className='flex justify-center mt-3'>
+            <div className="mt-3 flex justify-center">
               <a
                 href={selectedProject.link}
                 target="_blank"

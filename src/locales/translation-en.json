@@ -1,0 +1,89 @@
+{
+  "menu": {
+    "home": "Home",
+    "projects": "Projects",
+    "skills": "Skills",
+    "about": "About Me",
+    "contact": "Contact",
+    "resume": "Download Resume",
+    "lang": "PT-BR"
+  },
+  "links": ["home", "projects", "skills", "about", "contact"],
+  "hero": {
+    "subtitle": "Hi, I'm Pamella Soto",
+    "title": "Fullstack Developer",
+    "text": "Over <b>2 years of hands-on experience in web development, Git/GitHub, and working with teams.</b><br />Passionate about building <b>accessible, high-performance, and user-centered interfaces</b>, combining design and technology to turn ideas into functional web applications.",
+    "resumeDownloadBtn": "Download Resume"
+  },
+  "projects": {
+    "title": "Featured Projects",
+    "button": "See more on Github",
+    "lastUpdated": "Last updated: ",
+    "list": [
+      {
+        "name": "Moon Stationery",
+        "year": "2025",
+        "description": ["Moon Stationery is an academic project developed to practice the integration between backend, frontend, and database within the MVC architecture, while also consolidating knowledge of Java and Spring Boot.", 
+        "During development, I implemented features that simulate both the end-user experience and product management. On the storefront side, the system displays items in an organized way, with category pages, detailed product information, clear navigation, and search tools that make browsing easier. On the admin panel, it is possible to create and manage categories and products, as well as control which items appear as featured in the catalog.", 
+        "Although it is an academic project, I see potential to expand it in the future by adding user authentication, a shopping cart, online payments, and sales reports — moving it closer to a fully functional e-commerce platform."
+        ],
+        "stack": ["Java","Spring Boot", "JDBC", "Thymeleaf", "HTML", "CSS", "JavaScript", "PostgreSQL"],
+        "link": "https://github.com/PamellaSoto/java-stationery-inventory",
+        "thumbnail": "https://raw.githubusercontent.com/PamellaSoto/java-stationery-inventory/main/storefront.png",
+        "previewDemo": "",
+        "buttons": ["Open project", "Close"]
+      },
+      {
+        "name": "Commit AI Generator",
+        "year": "2025",
+        "description": ["Commit AI Generator is a project developed during the 20th edition of the NLW event, organized by Rocketseat. Despite the E-Sports theme proposed by the event, I chose to follow my own theme based on a personal need: creating commit messages that are clear, concise, and consistent. This project marked my first contact with artificial intelligence, exploring integration with Google’s Gemini API.", 
+        "During development, I created a detailed prompt capable of generating commit messages in any language, always respecting the Conventional Commits standards. The user can select the type of change and provide a brief description of their updates, and the system automatically generates a complete, standardized, and practical commit message. This approach improves commit history consistency and optimizes workflow."
+      ],
+        "stack": ["HTML", "CSS", "JavaScript", "Google Gemini API"],
+        "link": "https://github.com/PamellaSoto/commit-ai-generator",
+        "thumbnail": "https://raw.githubusercontent.com/PamellaSoto/commit-ai-generator/main/screenshot.png",
+        "previewDemo": "https://raw.githubusercontent.com/PamellaSoto/commit-ai-generator/main/screenshot.png",
+        "buttons": ["Open project", "Close"]
+      },
+      {
+        "name": "Virtual Keyboard",
+        "year": "2025",
+        "description": ["Virtual Keyboard is a virtual piano developed for fun and to practice event listeners and CSS. Users can play music by clicking the keys on screen or using their physical keyboard.",
+        "During development, I implemented additional features to enhance the user experience, such as a floating music tabs menu, the option to switch between keyboard letters and musical notes (C, D, E…), and a volume control to adjust the piano sound.",
+        "This project, developed during the Web Development Bootcamp at DIO, strengthened my skills in frontend development, interactivity, and user experience, delivering a fun and practical application to learn both music and programming."],
+        "stack": ["HTML", "CSS", "JavaScript"],
+        "link": "https://github.com/PamellaSoto/virtual-keyboard",
+        "thumbnail": "https://raw.githubusercontent.com/PamellaSoto/virtual-keyboard/main/screenshot.png",
+        "previewDemo": "https://raw.githubusercontent.com/PamellaSoto/virtual-keyboard/main/screenshot.png",
+        "buttons": ["Open project", "Close"]
+      }
+    ]
+  },
+  "skills": {
+    "title": "My skills",
+    "text": "Throughout my journey, I have delivered <b>over 30 WordPress websites</b> and worked on academic projects involving <b>CRUD operations and API integration.</b> I continuously strengthen my ability to learn fast, adapt to new challenges, and apply creative problem-solving, while expanding my expertise with modern tools to build impactful and scalable solutions as a developer.",
+    "frontend": "SEO and performance",
+    "backend": "Database modeling",
+    "design": "Wireframes and Prototyping",
+    "other": {
+      "title": "Other Skills",
+      "problem": "Problem Solving",
+      "office": "Office 365"
+    },
+    "button": "Send me an email"
+  },
+  "about": {
+    "title": "About me",
+    "text": [
+      "I am currently pursuing a degree in <b>Internet Systems at FATEC Rubens Lara</b>, constantly evolving and open to learning while exploring <b>new opportunities within the tech industry.</b>",
+      "Throughout my academic and practical journey, I have learned to value <b>collaboration, organization, and quality</b>— principles I consider essential for growing as a professional. I have a strong interest in <b>UI/UX and interface design</b>, aiming to create solutions that are <b>functional, accessible, and visually engaging.</b>",
+      "Outside of work, I enjoy spending time <b>watching series and spending time with loved ones and my cats</b> (the one in the photo is Lola). These moments recharge my creativity and allow me to return to work with fresh energy and focus."
+    ],
+    "catAlt": "Photo of a brown cat named Lola sleeping"
+  },
+  "contact": {
+    "title": "Contact Me",
+    "text": "I'm always open to new connections. Follow me on social media and let's talk!"
+  },
+  "footer": "© 2025 pamellasoto.dev. All rights reserved."
+}
