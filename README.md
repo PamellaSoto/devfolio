@@ -1,14 +1,21 @@
-# React + Vite
+# 🌐 Devfolio (English / Portuguese)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+My personal portfolio website where I showcase my best projects, skills, and journey as a developer.  
+The site is fully responsive, multilingual, and built with accessibility and smooth user experience in mind.  
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🖥 Tech Stack
+- React
+- TailwindCSS  
+- Framer Motion (WIP)
+- react-i18next with JSON locales  
+- Fully responsive across devices  
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-
-# devfolio
+## 🛠 Planned Improvements
+- Add whileInView animations
+- Add more projects with detailed case studies  
+- Ensure 100% accessibility compliance  
+- Refine English and Portuguese translations  
+- Add CVs (EN & PT) to the Google Drive
+- Add responsiveness to larger screens
+- Take a more professional picture 
